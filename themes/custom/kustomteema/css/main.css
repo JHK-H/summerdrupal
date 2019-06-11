@@ -1,0 +1,45 @@
+body {
+    background-color: white;
+}
+
+#block-kustomteema-account-menu {
+    float: right;
+}
+
+#block-kustomteema-branding {
+    /*display: inline-block;
+    width: 100%;
+    margin-left: 15px;
+    margin-bottom: 0px;*/
+    height: 110px;
+}
+
+#block-kustomteema-branding img {
+    height: 100px;
+    width: 330px;
+}
+
+#block-kustomteema-main-menu {
+    margin: 0px 0 0px 0;
+}
+
+#edit-submit {
+    background-color: #8C013C;
+}
+
+#main-menu .container ul.menu li.menu-item a:hover {
+    background: #8C013C;
+}
+
+#main-menu .container ul.menu li.menu-item--active-trail > a {
+    background: #8C013C;
+}
+
+#main-menu .container ul.menu li:first-child > a:active {
+    background: #8C013C;
+}
+
+#main-menu .container ul.menu li .is-active {
+    background: #8C013C;
+
+}
