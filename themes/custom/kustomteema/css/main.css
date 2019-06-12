@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: #FBE087;
 }
 
 #block-kustomteema-account-menu {
@@ -16,7 +16,7 @@ body {
 
 #block-kustomteema-branding img {
     height: 100px;
-    width: 330px;
+    width: 350px;
 }
 
 #block-kustomteema-main-menu {
@@ -27,12 +27,17 @@ body {
     background-color: #8C013C;
 }
 
+#main-menu .container {
+    background: #126b1d;
+}
+
 #main-menu .container ul.menu li.menu-item a:hover {
     background: #8C013C;
 }
 
 #main-menu .container ul.menu li.menu-item--active-trail > a {
     background: #8C013C;
+    
 }
 
 #main-menu .container ul.menu li:first-child > a:active {
@@ -41,5 +46,18 @@ body {
 
 #main-menu .container ul.menu li .is-active {
     background: #8C013C;
+}
 
+#block-kustomteema-search h2 {
+    background: #126b1d;
+}
+
+article .node__links ul.inline li a, ul.links.inline li a {
+    background: #FBE087;
+    color: gray;
+}
+
+article .node__links ul.inline li a:hover, ul.links.inline li a {
+    background: grey;
+    color: white;
 }
