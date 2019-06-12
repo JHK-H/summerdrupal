@@ -1,0 +1,22 @@
+uuid: 48ddd339-653e-4f1d-ad94-462a3eb11b62
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - kustomteema
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: kustomteema_messages
+theme: kustomteema
+region: header
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

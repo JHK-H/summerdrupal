@@ -1,0 +1,20 @@
+uuid: 2682d6e5-9327-4e73-972f-e643dddca2e8
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - kustomteema
+id: mainpagecontent
+theme: kustomteema
+region: header
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: visible
+visibility: {  }

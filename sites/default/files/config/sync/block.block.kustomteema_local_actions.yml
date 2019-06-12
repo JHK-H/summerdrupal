@@ -1,0 +1,20 @@
+uuid: 2c8ff4e4-ecac-41a7-bd6d-2340f4852e4e
+langcode: en
+status: true
+dependencies:
+  theme:
+    - kustomteema
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: kustomteema_local_actions
+theme: kustomteema
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

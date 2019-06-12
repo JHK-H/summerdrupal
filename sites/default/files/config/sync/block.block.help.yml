@@ -1,0 +1,20 @@
+uuid: 60c040ec-23d7-4bd5-91b2-c4b15f522cfe
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - kustomteema
+id: help
+theme: kustomteema
+region: header
+weight: -2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: visible
+visibility: {  }
