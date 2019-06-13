@@ -1,0 +1,14 @@
+uuid: 73add92c-2209-4165-bef3-5a61eb136999
+langcode: en
+status: true
+dependencies: {  }
+name: slideshow
+label: 'Slideshow (1170x390)'
+effects:
+  2ede35f1-fcfa-469b-886f-f3288c671bec:
+    uuid: 2ede35f1-fcfa-469b-886f-f3288c671bec
+    id: image_resize
+    weight: 1
+    data:
+      width: 1170
+      height: 390

@@ -1,0 +1,37 @@
+uuid: 506a4e35-23f7-451d-8d60-7712034aee8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.artikkeli.body
+    - field.field.node.artikkeli.field_image2
+    - node.type.artikkeli
+  module:
+    - image
+    - text
+    - user
+id: node.artikkeli.teaser
+targetEntityType: node
+bundle: artikkeli
+mode: teaser
+content:
+  body:
+    label: inline
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 300
+    third_party_settings: {  }
+    region: content
+  field_image2:
+    type: image
+    weight: 0
+    region: content
+    label: inline
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  links: true
