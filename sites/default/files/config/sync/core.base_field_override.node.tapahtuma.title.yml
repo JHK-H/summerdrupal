@@ -1,0 +1,18 @@
+uuid: 1e55ebc0-600f-4a81-91cb-0d5451d89bda
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.tapahtuma
+id: node.tapahtuma.title
+field_name: title
+entity_type: node
+bundle: tapahtuma
+label: Tapahtuma
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
