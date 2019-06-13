@@ -1,0 +1,30 @@
+uuid: 8df12452-8c58-4fd4-b0ce-6c9d590788c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.tapahtuma.body
+    - node.type.tapahtuma
+  module:
+    - text
+    - user
+id: node.tapahtuma.teaser
+targetEntityType: node
+bundle: tapahtuma
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

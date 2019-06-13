@@ -1,0 +1,19 @@
+uuid: e0bab115-0122-4f2b-b960-d9896bd15cf7
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_lisatietoa
+field_name: field_lisatietoa
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

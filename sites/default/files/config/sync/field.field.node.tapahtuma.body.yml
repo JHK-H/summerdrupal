@@ -1,0 +1,22 @@
+uuid: 5c2e945e-55a5-44aa-95ce-1433c3c31e50
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.tapahtuma
+  module:
+    - text
+id: node.tapahtuma.body
+field_name: body
+entity_type: node
+bundle: tapahtuma
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary
