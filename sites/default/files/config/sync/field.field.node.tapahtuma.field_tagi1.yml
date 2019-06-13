@@ -1,0 +1,21 @@
+uuid: 819ba4f8-5fb9-481d-9a8b-9a9063d8e064
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tagi1
+    - node.type.tapahtuma
+  module:
+    - text
+id: node.tapahtuma.field_tagi1
+field_name: field_tagi1
+entity_type: node
+bundle: tapahtuma
+label: Tagi1
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

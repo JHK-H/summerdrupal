@@ -5,7 +5,15 @@ dependencies:
   config:
     - field.field.node.tapahtuma.body
     - field.field.node.tapahtuma.feeds_item
+    - field.field.node.tapahtuma.field_alkamispaiva
+    - field.field.node.tapahtuma.field_intro
     - field.field.node.tapahtuma.field_lisatietoa
+    - field.field.node.tapahtuma.field_paattymispaiva
+    - field.field.node.tapahtuma.field_tagi1
+    - field.field.node.tapahtuma.field_tagi2
+    - field.field.node.tapahtuma.field_tagi3
+    - field.field.node.tapahtuma.field_tagi4
+    - field.field.node.tapahtuma.field_tagi5
     - field.field.node.tapahtuma.field_tapahtumakuva
     - node.type.tapahtuma
   module:
@@ -21,12 +29,26 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 1
+    weight: 5
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_alkamispaiva:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_intro:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
   field_lisatietoa:
-    weight: 3
+    weight: 6
     label: above
     settings:
       trim_length: 80
@@ -37,8 +59,50 @@ content:
     third_party_settings: {  }
     type: link
     region: content
+  field_paattymispaiva:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_tagi1:
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_tagi2:
+    weight: 8
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_tagi3:
+    weight: 9
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_tagi4:
+    weight: 10
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_tagi5:
+    weight: 11
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
   field_tapahtumakuva:
-    weight: 2
+    weight: 4
     label: above
     settings:
       image_style: ''

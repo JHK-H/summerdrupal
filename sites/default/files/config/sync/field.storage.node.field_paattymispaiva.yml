@@ -1,0 +1,20 @@
+uuid: 48e1e217-520f-4a23-af6a-13e762bef7b0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_paattymispaiva
+field_name: field_paattymispaiva
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

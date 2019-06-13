@@ -4,7 +4,16 @@ status: true
 dependencies:
   config:
     - field.field.node.tapahtuma.body
+    - field.field.node.tapahtuma.feeds_item
+    - field.field.node.tapahtuma.field_alkamispaiva
+    - field.field.node.tapahtuma.field_intro
     - field.field.node.tapahtuma.field_lisatietoa
+    - field.field.node.tapahtuma.field_paattymispaiva
+    - field.field.node.tapahtuma.field_tagi1
+    - field.field.node.tapahtuma.field_tagi2
+    - field.field.node.tapahtuma.field_tagi3
+    - field.field.node.tapahtuma.field_tagi4
+    - field.field.node.tapahtuma.field_tagi5
     - field.field.node.tapahtuma.field_tapahtumakuva
     - image.style.thumbnail
     - node.type.tapahtuma
@@ -33,6 +42,22 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_alkamispaiva:
+    weight: 125
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_intro:
+    weight: 124
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
   field_lisatietoa:
     weight: 122
     settings:
@@ -40,6 +65,54 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+    region: content
+  field_paattymispaiva:
+    weight: 126
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_tagi1:
+    weight: 127
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_tagi2:
+    weight: 128
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_tagi3:
+    weight: 129
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_tagi4:
+    weight: 130
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_tagi5:
+    weight: 131
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
     region: content
   field_tapahtumakuva:
     weight: 123
@@ -93,4 +166,5 @@ content:
       placeholder: ''
     region: content
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  feeds_item: true

@@ -1,0 +1,20 @@
+uuid: 99ae1cd2-1850-4c11-8b6b-5f5825be5b35
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_tagi4
+field_name: field_tagi4
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

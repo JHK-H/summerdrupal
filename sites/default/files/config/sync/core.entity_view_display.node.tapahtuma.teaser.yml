@@ -27,4 +27,7 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  feeds_item: true
+  field_lisatietoa: true
+  field_tapahtumakuva: true
