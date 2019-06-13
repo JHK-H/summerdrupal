@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.tapahtuma.body
+    - field.field.node.tapahtuma.feeds_item
     - field.field.node.tapahtuma.field_lisatietoa
     - field.field.node.tapahtuma.field_tapahtumakuva
     - image.style.thumbnail
@@ -93,4 +94,5 @@ content:
       placeholder: ''
     region: content
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  feeds_item: true
