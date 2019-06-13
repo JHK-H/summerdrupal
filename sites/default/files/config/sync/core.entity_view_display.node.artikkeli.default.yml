@@ -1,0 +1,40 @@
+uuid: 04538c1d-4ab5-4b47-ad6f-d884476e525f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.artikkeli.body
+    - field.field.node.artikkeli.field_image2
+    - image.style.large
+    - node.type.artikkeli
+  module:
+    - image
+    - text
+    - user
+id: node.artikkeli.default
+targetEntityType: node
+bundle: artikkeli
+mode: default
+content:
+  body:
+    label: above
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image2:
+    weight: 0
+    label: above
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
