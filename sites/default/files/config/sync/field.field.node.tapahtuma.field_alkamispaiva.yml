@@ -1,0 +1,21 @@
+uuid: 61394b9b-bf95-4c58-958a-a19dc6f6534f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_alkamispaiva
+    - node.type.tapahtuma
+  module:
+    - text
+id: node.tapahtuma.field_alkamispaiva
+field_name: field_alkamispaiva
+entity_type: node
+bundle: tapahtuma
+label: Alkamispaiva
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

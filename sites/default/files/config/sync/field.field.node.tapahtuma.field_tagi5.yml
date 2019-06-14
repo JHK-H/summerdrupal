@@ -1,0 +1,21 @@
+uuid: 6533ad85-c150-472f-96bc-1ce71ebd8a65
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tagi5
+    - node.type.tapahtuma
+  module:
+    - text
+id: node.tapahtuma.field_tagi5
+field_name: field_tagi5
+entity_type: node
+bundle: tapahtuma
+label: Tagi5
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

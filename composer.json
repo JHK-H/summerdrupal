@@ -9,7 +9,14 @@
         "drush/drush": "^9.7",
         "drupal/zircon": "^0.2.0",
         "drupal/memcache": "^2.0",
-        "drupal/views_slideshow": "^4.6"
+        "drupal/views_slideshow": "^4.6",
+        "vlucas/phpdotenv": "^3.3",
+        "drupal/console": "~1.0",
+        "drupal/devel": "^2.1",
+        "drupal/search_kint": "^1.0",
+        "drupal/feeds": "^3.0@alpha",
+        "drupal/feeds_ex": "^1.0@alpha",
+        "drupal/kint": "^2.1"
     },
     "replace": {
         "drupal/core": "^8.7"

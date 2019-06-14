@@ -5,7 +5,15 @@ dependencies:
   config:
     - core.base_field_override.node.tapahtuma.title
     - field.field.node.tapahtuma.body
+    - field.field.node.tapahtuma.field_alkamispaiva
+    - field.field.node.tapahtuma.field_intro
     - field.field.node.tapahtuma.field_lisatietoa
+    - field.field.node.tapahtuma.field_paattymispaiva
+    - field.field.node.tapahtuma.field_tagi1
+    - field.field.node.tapahtuma.field_tagi2
+    - field.field.node.tapahtuma.field_tagi3
+    - field.field.node.tapahtuma.field_tagi4
+    - field.field.node.tapahtuma.field_tagi5
     - field.field.node.tapahtuma.field_tapahtumakuva
     - node.type.tapahtuma
   module:
@@ -29,15 +37,42 @@ parser_configuration:
     namer_fi:
       label: name.fi
       value: name.fi
-    descriptionr_fi:
-      label: description.fi
-      value: description.fi
-    imagesr_0_url:
-      label: 'images[0].url'
-      value: 'images[0].url'
-    info_url_fi:
-      label: info_url.fi
-      value: info_url.fi
+    description_body:
+      label: description.body
+      value: description.body
+    description_images_0_url:
+      label: 'description.images[0].url'
+      value: 'description.images[0].url'
+    infoxx_url:
+      label: info_url
+      value: info_url
+    name_fi:
+      label: name.fi
+      value: name.fi
+    tagsxx_0_name:
+      label: 'tags[0].name'
+      value: 'tags[0].name'
+    descriptionxx_intro:
+      label: description.intro
+      value: description.intro
+    eventxx_dates_starting_day:
+      label: event_dates.starting_day
+      value: event_dates.starting_day
+    event_dates_ending_day:
+      label: event_dates.ending_day
+      value: event_dates.ending_day
+    tagsxx_1_name:
+      label: 'tags[1].name'
+      value: 'tags[1].name'
+    tagsxx_2_name:
+      label: 'tags[2].name'
+      value: 'tags[2].name'
+    tagsxx_3_name:
+      label: 'tags[3].name'
+      value: 'tags[3].name'
+    tags_4_name:
+      label: 'tags[4].name'
+      value: 'tags[4].name'
   display_errors: false
   source_encoding:
     - auto
@@ -83,6 +118,86 @@ custom_sources:
     label: info_url.fi
     value: info_url.fi
     machine_name: info_url_fi
+  description_body:
+    label: description.body
+    value: description.body
+    machine_name: description_body
+  description_images_0_url:
+    label: 'description.images[0].url'
+    value: 'description.images[0].url'
+    machine_name: description_images_0_url
+  info_url:
+    label: info_url
+    value: info_url
+    machine_name: info_url
+  tags_0_name:
+    label: 'tags[0].name'
+    value: 'tags[0].name'
+    machine_name: tags_0_name
+  description_intro:
+    label: description.intro
+    value: description.intro
+    machine_name: description_intro
+  event_dates_starting_day:
+    label: event_dates.starting_day
+    value: event_dates.starting_day
+    machine_name: event_dates_starting_day
+  descriptionxx_images_0_url:
+    label: 'description.images[0].url'
+    value: 'description.images[0].url'
+    machine_name: descriptionxx_images_0_url
+  infoxx_url:
+    label: info_url
+    value: info_url
+    machine_name: infoxx_url
+  tagsxx_0_name:
+    label: 'tags[0].name'
+    value: 'tags[0].name'
+    machine_name: tagsxx_0_name
+  descriptionxx_intro:
+    label: description.intro
+    value: description.intro
+    machine_name: descriptionxx_intro
+  eventxx_dates_starting_day:
+    label: event_dates.starting_day
+    value: event_dates.starting_day
+    machine_name: eventxx_dates_starting_day
+  event_dates_ending_day:
+    label: event_dates.ending_day
+    value: event_dates.ending_day
+    machine_name: event_dates_ending_day
+  tags_1_name:
+    label: 'tags[1].name'
+    value: 'tags[1].name'
+    machine_name: tags_1_name
+  tags_2_name:
+    label: 'tags[2].name'
+    value: 'tags[2].name'
+    machine_name: tags_2_name
+  '':
+    label: ''
+    value: ''
+    machine_name: ''
+  tags_3_name:
+    label: 'tags[3].name'
+    value: 'tags[3].name'
+    machine_name: tags_3_name
+  tagsxx_1_name:
+    label: 'tags[1].name'
+    value: 'tags[1].name'
+    machine_name: tagsxx_1_name
+  tagsxx_2_name:
+    label: 'tags[2].name'
+    value: 'tags[2].name'
+    machine_name: tagsxx_2_name
+  tagsxx_3_name:
+    label: 'tags[3].name'
+    value: 'tags[3].name'
+    machine_name: tagsxx_3_name
+  tags_4_name:
+    label: 'tags[4].name'
+    value: 'tags[4].name'
+    machine_name: tags_4_name
 mappings:
   -
     target: title
@@ -92,14 +207,14 @@ mappings:
   -
     target: body
     map:
-      value: descriptionr_fi
+      value: description_body
       summary: ''
     settings:
       format: basic_html
   -
     target: field_tapahtumakuva
     map:
-      target_id: imagesr_0_url
+      target_id: description_images_0_url
       alt: ''
       title: ''
     settings:
@@ -109,5 +224,53 @@ mappings:
   -
     target: field_lisatietoa
     map:
-      uri: info_url_fi
-      title: ''
+      uri: infoxx_url
+      title: name_fi
+  -
+    target: field_tagi1
+    map:
+      value: tagsxx_0_name
+    settings:
+      format: plain_text
+  -
+    target: field_intro
+    map:
+      value: descriptionxx_intro
+    settings:
+      format: plain_text
+  -
+    target: field_alkamispaiva
+    map:
+      value: eventxx_dates_starting_day
+    settings:
+      format: plain_text
+  -
+    target: field_paattymispaiva
+    map:
+      value: event_dates_ending_day
+    settings:
+      format: plain_text
+  -
+    target: field_tagi2
+    map:
+      value: tagsxx_1_name
+    settings:
+      format: plain_text
+  -
+    target: field_tagi3
+    map:
+      value: tagsxx_2_name
+    settings:
+      format: plain_text
+  -
+    target: field_tagi4
+    map:
+      value: tagsxx_3_name
+    settings:
+      format: plain_text
+  -
+    target: field_tagi5
+    map:
+      value: tags_4_name
+    settings:
+      format: plain_text

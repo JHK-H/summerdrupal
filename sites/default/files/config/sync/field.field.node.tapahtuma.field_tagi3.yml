@@ -1,0 +1,21 @@
+uuid: 1de4e66f-e375-4916-aaf3-2d70e4764397
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tagi3
+    - node.type.tapahtuma
+  module:
+    - text
+id: node.tapahtuma.field_tagi3
+field_name: field_tagi3
+entity_type: node
+bundle: tapahtuma
+label: Tagi3
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
