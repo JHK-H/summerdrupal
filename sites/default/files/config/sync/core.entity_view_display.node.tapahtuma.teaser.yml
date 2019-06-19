@@ -5,6 +5,17 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.tapahtuma.body
+    - field.field.node.tapahtuma.feeds_item
+    - field.field.node.tapahtuma.field_alku
+    - field.field.node.tapahtuma.field_intro
+    - field.field.node.tapahtuma.field_lisatietoa
+    - field.field.node.tapahtuma.field_loppu
+    - field.field.node.tapahtuma.field_tagi1
+    - field.field.node.tapahtuma.field_tagi2
+    - field.field.node.tapahtuma.field_tagi3
+    - field.field.node.tapahtuma.field_tagi4
+    - field.field.node.tapahtuma.field_tagi5
+    - field.field.node.tapahtuma.field_tapahtumakuva
     - node.type.tapahtuma
   module:
     - text
@@ -17,17 +28,25 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    weight: 0
     settings:
       trim_length: 600
     third_party_settings: {  }
     region: content
   links:
-    weight: 100
+    weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   feeds_item: true
+  field_alku: true
+  field_intro: true
   field_lisatietoa: true
+  field_loppu: true
+  field_tagi1: true
+  field_tagi2: true
+  field_tagi3: true
+  field_tagi4: true
+  field_tagi5: true
   field_tapahtumakuva: true

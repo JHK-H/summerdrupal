@@ -2,6 +2,8 @@ uuid: 4a545748-fe54-4dbe-8574-8749d6dd08ac
 langcode: en
 status: true
 dependencies:
+  module:
+    - ctools
   theme:
     - kustomteema
 _core:
@@ -9,7 +11,7 @@ _core:
 id: kustomteema_page_title
 theme: kustomteema
 region: content
-weight: -50
+weight: -9
 provider: null
 plugin: page_title_block
 settings:
@@ -17,4 +19,11 @@ settings:
   label: 'Page title'
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

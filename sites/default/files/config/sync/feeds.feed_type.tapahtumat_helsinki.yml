@@ -5,10 +5,10 @@ dependencies:
   config:
     - core.base_field_override.node.tapahtuma.title
     - field.field.node.tapahtuma.body
-    - field.field.node.tapahtuma.field_alkamispaiva
+    - field.field.node.tapahtuma.field_alku
     - field.field.node.tapahtuma.field_intro
     - field.field.node.tapahtuma.field_lisatietoa
-    - field.field.node.tapahtuma.field_paattymispaiva
+    - field.field.node.tapahtuma.field_loppu
     - field.field.node.tapahtuma.field_tagi1
     - field.field.node.tapahtuma.field_tagi2
     - field.field.node.tapahtuma.field_tagi3
@@ -55,12 +55,6 @@ parser_configuration:
     descriptionxx_intro:
       label: description.intro
       value: description.intro
-    eventxx_dates_starting_day:
-      label: event_dates.starting_day
-      value: event_dates.starting_day
-    event_dates_ending_day:
-      label: event_dates.ending_day
-      value: event_dates.ending_day
     tagsxx_1_name:
       label: 'tags[1].name'
       value: 'tags[1].name'
@@ -73,6 +67,12 @@ parser_configuration:
     tags_4_name:
       label: 'tags[4].name'
       value: 'tags[4].name'
+    event_dates_starting_day:
+      label: event_dates.starting_day
+      value: event_dates.starting_day
+    event_dates_ending_day:
+      label: event_dates.ending_day
+      value: event_dates.ending_day
   display_errors: false
   source_encoding:
     - auto
@@ -239,18 +239,6 @@ mappings:
     settings:
       format: plain_text
   -
-    target: field_alkamispaiva
-    map:
-      value: eventxx_dates_starting_day
-    settings:
-      format: plain_text
-  -
-    target: field_paattymispaiva
-    map:
-      value: event_dates_ending_day
-    settings:
-      format: plain_text
-  -
     target: field_tagi2
     map:
       value: tagsxx_1_name
@@ -274,3 +262,15 @@ mappings:
       value: tags_4_name
     settings:
       format: plain_text
+  -
+    target: field_alku
+    map:
+      value: event_dates_starting_day
+    settings:
+      timezone: UTC
+  -
+    target: field_loppu
+    map:
+      value: event_dates_ending_day
+    settings:
+      timezone: UTC

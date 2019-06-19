@@ -4,12 +4,15 @@ module:
   block: 0
   block_content: 0
   breakpoint: 0
+  calendar: 0
+  calendar_datetime: 0
   ckeditor: 0
   color: 0
   comment: 0
   config: 0
   contact: 0
   contextual: 0
+  ctools: 0
   datetime: 0
   dblog: 0
   devel: 0
@@ -47,6 +50,7 @@ module:
   user: 0
   views_slideshow: 0
   views_slideshow_cycle: 0
+  views_templates: 0
   views_ui: 0
   menu_link_content: 1
   views: 10

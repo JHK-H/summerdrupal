@@ -5,10 +5,10 @@ dependencies:
   config:
     - field.field.node.tapahtuma.body
     - field.field.node.tapahtuma.feeds_item
-    - field.field.node.tapahtuma.field_alkamispaiva
+    - field.field.node.tapahtuma.field_alku
     - field.field.node.tapahtuma.field_intro
     - field.field.node.tapahtuma.field_lisatietoa
-    - field.field.node.tapahtuma.field_paattymispaiva
+    - field.field.node.tapahtuma.field_loppu
     - field.field.node.tapahtuma.field_tagi1
     - field.field.node.tapahtuma.field_tagi2
     - field.field.node.tapahtuma.field_tagi3
@@ -17,6 +17,7 @@ dependencies:
     - field.field.node.tapahtuma.field_tapahtumakuva
     - node.type.tapahtuma
   module:
+    - datetime
     - image
     - link
     - text
@@ -33,12 +34,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_alkamispaiva:
-    weight: 2
+  field_alku:
+    weight: 12
     label: above
-    settings: {  }
+    settings:
+      format_type: medium
+      timezone_override: ''
     third_party_settings: {  }
-    type: text_default
+    type: datetime_default
     region: content
   field_intro:
     weight: 1
@@ -59,12 +62,14 @@ content:
     third_party_settings: {  }
     type: link
     region: content
-  field_paattymispaiva:
-    weight: 3
+  field_loppu:
+    weight: 13
     label: above
-    settings: {  }
+    settings:
+      format_type: medium
+      timezone_override: ''
     third_party_settings: {  }
-    type: text_default
+    type: datetime_default
     region: content
   field_tagi1:
     weight: 7
